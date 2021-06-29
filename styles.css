@@ -1,0 +1,165 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784D3C;
+    --gris: #e1e1e1;
+    --blanco: #ffffff;
+    --negro: #000000;
+    --amarillo: #FFC107;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */   
+    min-height: 100%; 
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+    background-image: linear-gradient(to top, #fc8989, #ffa7ff  100%);
+}
+
+/** Globales **/
+.contenedor {
+    width: min(90%, 70rem);
+    margin: 0 auto;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+h1 {
+    font-size: 4.8rem;
+}
+h2 {
+    font-size: 4rem;
+}
+h3 {
+    font-size: 3.2rem;
+}
+h4 {
+    font-size: 2.8rem;
+}
+img {
+    max-width: 100%;
+}
+/** Utilidades **/
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+.div-botones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot{
+    background-color: #aa0baa;
+    color: #ffffff;
+
+
+    font-size: 4rem;
+    border-radius: 1.5rem;
+    margin: 2rem;
+    width: 100%;
+    height: 9.7rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+}
+
+
+
+
+.bot::before{
+content: 'Si';
+}
+
+.bot::after{
+    content: 'Sabia que dirias que sii te amo ;)';
+    opacity: 0;
+
+}
+.bot:hover::before{
+
+    opacity: 0;
+}
+
+.bot:hover::after{
+
+    opacity: 1;
+}
+    
+
+
+
+.bot:hover{
+    color: black;
+    background-color: var(--amarillo);
+   
+}
+
+
+.bot2{
+    background-color: #aa0baa;
+    color: #ffffff;
+
+
+    font-size: 4rem;
+    border-radius: 1.5rem;
+    margin: 2rem;
+    width: 100%;
+    height: 9.7rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease;
+    
+}
+
+
+
+
+.bot2::before{
+content: 'No';
+}
+
+.bot2::after{
+    content: 'No podria decirte que no, obvio sii ;)';
+    opacity: 0;
+
+}
+.bot2:hover::before{
+
+    opacity: 0;
+}
+
+.bot2:hover::after{
+
+    opacity: 1;
+}
+    
+
+
+
+.bot2:hover{
+    color: black;
+    background-color: var(--amarillo);
+   
+}
+
+
